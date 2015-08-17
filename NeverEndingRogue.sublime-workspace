@@ -3,10 +3,50 @@
 	{
 		"selected_items":
 		[
+			[
+				"keyboard",
+				"Keyboard	openfl.ui"
+			],
+			[
+				"add",
+				"addEventListener(...)	Void"
+			],
+			[
+				"Te",
+				"TextFormat	class"
+			],
+			[
+				"Bit",
+				"BitmapData	class"
+			]
 		]
 	},
 	"buffers":
 	[
+		{
+			"file": "Source/Main.hx",
+			"settings":
+			{
+				"buffer_size": 985,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "project.xml",
+			"settings":
+			{
+				"buffer_size": 490,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Source/Player.hx",
+			"settings":
+			{
+				"buffer_size": 346,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -49,6 +89,7 @@
 	],
 	"file_history":
 	[
+		"/home/canox/haxe/NeverEndingRogue/Source/TileMap.hx",
 		"/home/canox/haxe/HelloWorld/source/Main.hx",
 		"/home/canox/haxe/HelloWorld/source/MenuState.hx",
 		"/home/canox/haxe/HelloWorld/HelloWorld.hxproj",
@@ -87,8 +128,97 @@
 	"groups":
 	[
 		{
+			"selected": 2,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "Source/Main.hx",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 985,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								869,
+								869
+							]
+						],
+						"settings":
+						{
+							"haxe-build-id": 0,
+							"syntax": "Packages/Haxe/Haxe.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 90.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "project.xml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 490,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								295,
+								295
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/XML/XML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "Source/Player.hx",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 346,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								299,
+								299
+							]
+						],
+						"settings":
+						{
+							"haxe-build-id": 0,
+							"syntax": "Packages/Haxe/Haxe.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -98,7 +228,7 @@
 	},
 	"input":
 	{
-		"height": 0.0
+		"height": 31.0
 	},
 	"layout":
 	{
@@ -123,6 +253,10 @@
 		]
 	},
 	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 157.0
+	},
 	"output.find_results":
 	{
 		"height": 0.0
