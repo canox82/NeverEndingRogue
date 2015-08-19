@@ -13,7 +13,7 @@ class Player extends TextField
 
 		x = pX;
 		y = pY;
-		defaultTextFormat = new TextFormat(Assets.getFont("fonts/Crisp.ttf").fontName,30, pCol);
+		defaultTextFormat = new TextFormat(Assets.getFont("fonts/Crisp.ttf").fontName,28, pCol);
 
 		text ="@";
 	}

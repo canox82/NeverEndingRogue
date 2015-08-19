@@ -24,14 +24,6 @@
 	"buffers":
 	[
 		{
-			"file": "Source/Main.hx",
-			"settings":
-			{
-				"buffer_size": 985,
-				"line_ending": "Unix"
-			}
-		},
-		{
 			"file": "project.xml",
 			"settings":
 			{
@@ -44,6 +36,14 @@
 			"settings":
 			{
 				"buffer_size": 346,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/usr/lib/haxe/lib/luxe/git/tests/features/draw/src/Main.hx",
+			"settings":
+			{
+				"buffer_size": 9808,
 				"line_ending": "Unix"
 			}
 		}
@@ -89,6 +89,7 @@
 	],
 	"file_history":
 	[
+		"/home/canox/haxe/NeverEndingRogue/Source/Main.hx",
 		"/home/canox/haxe/NeverEndingRogue/Source/TileMap.hx",
 		"/home/canox/haxe/HelloWorld/source/Main.hx",
 		"/home/canox/haxe/HelloWorld/source/MenuState.hx",
@@ -133,36 +134,6 @@
 			[
 				{
 					"buffer": 0,
-					"file": "Source/Main.hx",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 985,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								869,
-								869
-							]
-						],
-						"settings":
-						{
-							"haxe-build-id": 0,
-							"syntax": "Packages/Haxe/Haxe.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 90.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
 					"file": "project.xml",
 					"semi_transient": false,
 					"settings":
@@ -187,11 +158,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
+					"buffer": 1,
 					"file": "Source/Player.hx",
 					"semi_transient": false,
 					"settings":
@@ -214,6 +185,37 @@
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/usr/lib/haxe/lib/luxe/git/tests/features/draw/src/Main.hx",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 9808,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"haxe-build-id": 0,
+							"syntax": "Packages/Haxe/Haxe.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": -0.0,
+						"translation.y": 4230.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
