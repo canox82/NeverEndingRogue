@@ -9,10 +9,12 @@ import openfl.ui.Keyboard;
 
 class Main extends Sprite {
 		
-	var player1 : Player = new Player(100,100, 0x00e536); //Green color for player
+	var player1 : Player = new Player(1,1, 0x00e536); //Green color for player
 	private var keys:Array<Bool>;
 	public var rows:Int = 30;
 	public var cols:Int = 30;
+	var x_plr: Int =0; //Player coordinates
+	var y_plr: Int =0; //Player coordinates
 
 	public var Map_array:Array<Array<String>>;
 
@@ -23,15 +25,16 @@ class Main extends Sprite {
 		var random_wall:Float;
 		for (yy in 0...rows){
 			new_row=[];
-			random_wall=Math.random(); // Set random number to have a wall or not
 			for (xx in 0...cols) {
-				if (Math.random()>random_wall)
+				random_wall=Math.random(); // Set random number to have a wall or not
+				if (random_wall>0.75)
 					new_row.push("#");
 				else
 					new_row.push(".");
 			}
 			Map_array.push(new_row);
 		}
+		Map_array[1][1]=".";
 	}
 
 	private function drawMap():Void{
@@ -73,16 +76,56 @@ class Main extends Sprite {
 	private function on_KeyDown(evt:KeyboardEvent):Void {
 		keys[evt.keyCode] = true;
 		if (keys[Keyboard.UP]) {
-			player1.y-=15;
+			if (y_plr>0){
+				y_plr-=1;
+				if (Map_array[y_plr+1][x_plr+1]!="#"){
+					player1.move(x_plr,y_plr);
+				}
+				else{
+					trace("Wall!");
+					y_plr+=1;
+				}
+			}
+			else y_plr = 0;
 		}
 		if (keys[Keyboard.DOWN]) {
-			player1.y+=15;
+			if (y_plr<27){
+				y_plr+=1;
+				if (Map_array[y_plr+1][x_plr+1]!="#"){
+					player1.move(x_plr,y_plr);
+				}
+				else{
+					trace("Wall!");
+					y_plr-=1;
+				}
+			}
+			else y_plr = 27;
 		}
 		if (keys[Keyboard.LEFT]) {
-			player1.x-=15;
+			if (x_plr>0){
+				x_plr-=1;
+				if (Map_array[y_plr+1][x_plr+1]!="#"){
+					player1.move(x_plr,y_plr);
+				}
+				else{
+					trace("Wall!");
+					x_plr+=1;
+				}
+			}
+			else x_plr = 0;
 		}
 		if (keys[Keyboard.RIGHT]) {
-			player1.x+=15;
+			if (x_plr<27){
+				x_plr+=1;
+				if (Map_array[y_plr+1][x_plr+1]!="#"){
+					player1.move(x_plr,y_plr);
+				}
+				else{
+					trace("Wall!");
+					x_plr-=1;
+				}
+			}
+			else x_plr = 27;
 		}
 	}
 	
